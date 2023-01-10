@@ -1,2 +1,2 @@
-# selab
+# seclab
 Compartilhamento de conhecimento
