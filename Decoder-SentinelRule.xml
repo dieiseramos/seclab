@@ -1,0 +1,41 @@
+<!-- Local rules -->
+
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
+
+<!-- Example -->
+<!-- Local rules -->
+
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
+
+<!-- Example -->
+<group name="edr,epp,antivirus,">
+
+  <rule id="100010" level="12">
+    <decoded_as>SentinelOne</decoded_as>
+    <field name="eventDesc">New active threat</field>
+    <description>$(eventDesc)</description>
+    <group>sentinelone,</group>
+  </rule>
+
+  <rule id="100011" level="8">
+    <decoded_as>SentinelOne</decoded_as>
+    <field name="eventDesc">Kill performed successfully</field>
+    <description>$(eventDesc) on $(sourceHostName)</description>
+    <group>sentinelone,</group>
+  </rule>
+
+  <rule id="100012" level="8">
+    <decoded_as>SentinelOne</decoded_as>
+    <field name="eventDesc">Quarantine performed successfully</field>
+    <description>$(eventDesc) on $(sourceHostName)</description>
+    <group>sentinelone,</group>
+  </rule>
+
+  <rule id="200000" level="14" frequency="2" timeframe="240">
+    <if_matched_sid>100010&&100012</if_matched_sid>
+    <same_field>sourceHostName</same_field>
+    <description>Ameaça mitigada</description>
+ </rule>
+</group>

@@ -1,0 +1,373 @@
+<!-- Modify it at your will. -->
+<!--
+Decoder criado por Dieise Ramos.
+Linkedin: https://www.linkedin.com/in/dieise-ramos-85122690/
+Blog: https://blog.seclab.tec.br/
+-->
+<!--
+Esse decoder analisa os logs proveniente da console do SentinelOne.
+O formato do logs esta em CEF2
+-->
+<!--
+<11>2022-08-04 20:13:24,266   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=5ff465afaabcbf0150d1a3ab2c2e74f3a4426467|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\poc1000.exe|ip=144.22.206.155|fileName=poc1000.exe|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2008|eventDesc=Rollback failed|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:13:18.124587|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=272|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Ransomware|threatClassificationSource=Cloud|threatDetectingEngine=reputation.user|threatClassifier=BLACKLIST|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments="C:\Users\Parceiro\Downloads\poc1000.exe"|threatID=1475473393707354204|threatStoryline=95B971D242349E4C|threatDetectionTime=2022-07-29 18:22:15.014100|threatIndicatorsList=[128, 319, 751, 199, 620, 343, 110, 344, 47, 264, 463, 55, 509, 637, 325, 503, 275, 641, 108, 109, 107, 427, 507, 287, 121, 320, 276, 314, 126, 283, 43]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-07-29 18:22:15.014100|activityID=1479877935414563228|activityType=2008
+<12>2022-08-05 19:11:24,335   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|rt=2022-08-05 19:11:16.548173|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\Não confirmado 358447.crdownload|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=19|eventDesc=New active threat - machine VUBLO-DEMO-01|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-05 19:11:16.534159|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=1|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.cloud|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1480571499198991665|threatStoryline=01E372D242349E4C|threatDetectionTime=2022-08-05 19:11:16.548173|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MALWARE|fileName=Não confirmado 358447.crdownload|activityID=1480571499341598004|activityType=19
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\Não confirmado 721419.crdownload|ip=144.22.206.155|fileName=Não confirmado 721419.crdownload|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.488758|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1479042230459342366|threatStoryline=40B872D242349E4C|threatDetectionTime=2022-08-03 16:32:53.508037|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-03 16:32:53.508037|activityID=1479878718717640227|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\eicar_com (22).zip|ip=144.22.206.155|fileName=eicar_com (22).zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.488758|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1477719998131172436|threatStoryline=879A72D242349E4C|threatDetectionTime=2022-08-01 20:45:51.132010|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-01 20:45:51.132010|activityID=1479878720219201063|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\$Recycle.Bin\S-1-5-21-4002994686-1961749117-3202308438-1003\$RBM1S9R.zip|ip=144.22.206.155|fileName=$RBM1S9R.zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.488758|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1478990677446105792|threatStoryline=F4B472D242349E4C|threatDetectionTime=2022-08-03 14:50:27.909588|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-03 14:50:27.909588|activityID=1479878721662041642|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\eicar_com (17).zip|ip=144.22.206.155|fileName=eicar_com (17).zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.488758|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1479802744536832726|threatStoryline=D4C972D242349E4C|threatDetectionTime=2022-08-04 17:43:53.850598|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-04 17:43:53.850598|activityID=1479878723121659438|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\eicar_com (28).zip|ip=144.22.206.155|fileName=eicar_com (28).zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.650065|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1478323677298355285|threatStoryline=25A872D242349E4C|threatDetectionTime=2022-08-02 16:45:15.295434|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-02 16:45:15.295434|activityID=1479878724564500017|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\eicar_com (38).zip|ip=144.22.206.155|fileName=eicar_com (38).zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.650065|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1478434160619168314|threatStoryline=8AAA72D242349E4C|threatDetectionTime=2022-08-02 20:24:45.934302|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-02 20:24:45.934302|activityID=1479878726007341460|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\$Recycle.Bin\S-1-5-21-4002994686-1961749117-3202308438-1003\$RMMH0P7.zip|ip=144.22.206.155|fileName=$RMMH0P7.zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.650065|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1479024853742846980|threatStoryline=42B772D242349E4C|threatDetectionTime=2022-08-03 15:58:22.041709|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-03 15:58:22.041709|activityID=1479878727500513851|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\Users\Parceiro\Downloads\Não confirmado 764163.crdownload|ip=144.22.206.155|fileName=Não confirmado 764163.crdownload|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.650065|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1477579625688274522|threatStoryline=569772D242349E4C|threatDetectionTime=2022-08-01 16:06:57.432823|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-01 16:06:57.432823|activityID=1479878730537190720|activityType=2001
+<14>2022-08-04 20:16:14,308   sentinel -  CEF:2|SentinelOne|Mgmt|Windows Server 2019 Standard|fileHash=d27265074c9eac2e2122ed69294dbc4d7cce9141|filePath=\Device\HarddiskVolume3\$Recycle.Bin\S-1-5-21-4002994686-1961749117-3202308438-1003\$RF5M9J7.zip|ip=144.22.206.155|fileName=$RF5M9J7.zip|deviceAddress=54.145.186.126|deviceHostFqdn=usea1-300-nfr.sentinelone.net|deviceHostName=usea1-300-nfr.sentinelone.net|notificationScope=SITE|siteId=1255252963322897420|siteName=NFR_BR - VUBLO|accountId=897036614390444213|accountName=CLM Software|vendor=SentinelOne|eventID=2001|eventDesc=Kill performed successfully|eventSeverity=1|originatorName=VUBLO-DEMO-01|originatorVersion=22.1.1.77|sourceAgentLastActivityTimestamp=2022-08-04 20:15:59.800989|sourceAgentRegisterTimestamp=2022-03-24 12:50:43.862366|sourceNetworkState=connected|sourceOsRevision=17763|sourceOsType=windows|sourceAgentUuid=18a281701b4a4891912cdbcad78f7cfa|sourceFqdn=VUBLO-DEMO-01.AUTOSKY04|sourceThreatCount=0|sourceMgmtPrecievedAddress=144.22.206.155|sourceDnsDomain=AUTOSKY04|sourceHostName=VUBLO-DEMO-01|sourceUserName=|sourceUserId=|sourceAgentId=1383260016807331847|sourceGroupId=1289916557728176708|sourceGroupName=PROD|sourceIpAddresses=['10.101.14.129', 'fe80::4002:655b:6567:73a9']|sourceMacAddresses=['02:00:17:00:34:56']|threatClassification=Malware|threatClassificationSource=Engine|threatDetectingEngine=reputation.user|threatClassifier=STATIC|threatMitigationStatus=mitigated|threatConfidenceLevel=malicious|threatMitigatedPreemptively=False|threatMitigationStatusLabel=mitigated|threatMitigationStatusID=0|threatCommandLineArguments=None|threatID=1478990736141196436|threatStoryline=C1B472D242349E4C|threatDetectionTime=2022-08-03 14:50:34.906621|threatIndicatorsList=[]|threatProcessUser=VUBLO-DEMO-01\Parceiro|fileHashSha256=None|fileHashMd5=None|cat=MITIGATION|rt=2022-08-03 14:50:34.906621|activityID=1479878731988420458|activityType=2001
+-->
+
+
+<decoder name="SentinelOne">
+    <prematch>^\.+ \d+:\d+:\d+,\d+   sentinel -  </prematch>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+    <parent>SentinelOne</parent>
+    <regex>^CEF:2\|</regex>
+    <order>format</order>
+</decoder>
+
+
+<decoder name="SentinelOne_Fields">
+    <parent>SentinelOne</parent>
+    <regex offset="after_regex">(\.+)\|(\.+)\|(\.+)\|(\.+)\|</regex>
+    <order>format, edr, type, typeos</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>rt=(\.+)\|</regex>
+   <order>rt</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>fileHash=(\.+)\|</regex>
+   <order>fileHash</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>filePath=(\.+)\|</regex>
+   <order>filePath</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>deviceAddress=(\.+)\|</regex>
+   <order>deviceAddress</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>deviceHostFqdn=(\.+)\|</regex>
+   <order>deviceHostFqdn</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>deviceHostName=(\.+)\|</regex>
+   <order>deviceHostName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>notificationScope=(\.+)\|</regex>
+   <order>notificationScope</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>siteName=(\.+)\|</regex>
+   <order>siteName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>siteName=(\.+)\|</regex>
+   <order>siteName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>accountId=(\.+)\|</regex>
+   <order>accountId</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>accountName=(\.+)\|</regex>
+   <order>accountName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>vendor=(\.+)\|</regex>
+   <order>vendor</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>eventID=(\.+)\|</regex>
+   <order>eventID</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>eventSeverity=(\.+)\|</regex>
+   <order>eventSeverity</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>originatorName=(\.+)\|</regex>
+   <order>originatorName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>originatorVersion=(\.+)\|</regex>
+   <order>originatorVersion</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>eventDesc=(\.+)\|</regex>
+   <order>eventDesc</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceAgentLastActivityTimestamp=(\.+)\|</regex>
+   <order>sourceAgentLastActivityTimestamp</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceAgentRegisterTimestamp=(\.+)\|</regex>
+   <order>sourceAgentRegisterTimestamp</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceNetworkState=(\.+)\|</regex>
+   <order>sourceNetworkState</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceOsRevision=(\.+)\|</regex>
+   <order>sourceOsRevision</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceOsType=(\.+)\|</regex>
+   <order>sourceOsType</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceAgentUuid=(\.+)\|</regex>
+   <order>sourceAgentUuid</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceFqdn=(\.+)\|</regex>
+   <order>sourceFqdn</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceThreatCount=(\.+)\|</regex>
+   <order>sourceThreatCount</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceMgmtPrecievedAddress=(\.+)\|</regex>
+   <order>sourceMgmtPrecievedAddress</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceDnsDomain=(\.+)\|</regex>
+   <order>sourceDnsDomain</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceHostName=(\.+)\|</regex>
+   <order>sourceHostName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceAgentId=(\.+)\|</regex>
+   <order>sourceAgentId</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceGroupId=(\.+)\|</regex>
+   <order>sourceGroupId</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceGroupName=(\.+)\|</regex>
+   <order>sourceGroupName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceIpAddresses=(\.+)\|</regex>
+   <order>sourceIpAddresses</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>sourceMacAddresses=(\.+)\|</regex>
+   <order>sourceMacAddresses</order>
+</decoder>
+
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatClassification=(\.+)\|</regex>
+   <order>threatClassification</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatClassificationSource=(\.+)\|</regex>
+   <order>threatClassificationSource</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatDetectingEngine=(\.+)\|</regex>
+   <order>threatDetectingEngine</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatClassifier=(\.+)\|</regex>
+   <order>threatClassifier</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatMitigationStatus=(\.+)\|</regex>
+   <order>threatMitigationStatus</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatConfidenceLevel=(\.+)\|</regex>
+   <order>threatConfidenceLevel</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatMitigatedPreemptively=(\.+)\|</regex>
+   <order>threatMitigatedPreemptively</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatMitigationStatusLabel=(\.+)\|</regex>
+   <order>threatMitigationStatusLabel</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatMitigationStatusID=(\.+)\|</regex>
+   <order>threatMitigationStatusID</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatMitigationStatusID=(\.+)\|</regex>
+   <order>threatMitigationStatusID</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatCommandLineArguments=(\.+)\|</regex>
+   <order>threatCommandLineArguments</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatID=(\.+)\|</regex>
+   <order>threatID</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatStoryline=(\.+)\|</regex>
+   <order>threatStoryline</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatDetectionTime=(\.+)\|</regex>
+   <order>threatDetectionTime</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatIndicatorsList=(\.+)\|</regex>
+   <order>threatIndicatorsList</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>threatProcessUser=(\.+)\|</regex>
+   <order>threatProcessUser</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>fileHashSha256=(\.+)\|</regex>
+   <order>fileHashSha256</order>
+</decoder>
+
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>fileHashMd5=(\.+)\|</regex>
+   <order>fileHashMd5</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>fileName=(\.+)\|</regex>
+   <order>fileName</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>cat=(\.+)\|</regex>
+   <order>cat</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>activityID=(\.+)\|</regex>
+   <order>activityID</order>
+</decoder>
+
+<decoder name="SentinelOne_Fields">
+   <parent>SentinelOne</parent>
+   <regex>activityType=(\.+)\|</regex>
+   <order>activityType</order>
+</decoder>
